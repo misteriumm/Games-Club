@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up to EveryGame!</title>
+    <style>
+          h1 {color:#70cfef;}
+          p {color:white;}
+          h2 {color: rgb(231, 169, 255)}
+          i {color:rgb(160, 160, 160)}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #1a1a2e;">
+        <nav class="navbar">
+      <div class-"logo">EVERY</div>
+      <ul class ="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="nights.html">Game Nights</a></li>
+        <li><a href="#" style="color:#777777;">Join Up</a></li>
+      </ul> 
+    </nav>
+    <main>
+        <hr>
+        <article id="contact">
+            <h1>Sign Up for EveryGame!</h1>
+            <i>join the fun!</i>
+            <form action="https://httpbin.org/get"method="get">
+                <fieldset>
+                    <legend><p>Basic Info</p></legend>
+            <p>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="off" required>
+            </p>
+            <p>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="off" required>
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="+44 1234-567890" autocomplete="off" required>
+            </p>
+            <p>
+                <label for="decade">Birth Year:</label>
+                <input type="number" name="decade" id="decade" min="1950" max="2020" step="1" value="2000">
+            </p>
+            <p>
+            <label for="genre"> Favourite Genre:</label>
+                <input type="text" name="genre" id="genre" list="genreList">
+                <datalist id="genreList">
+                <option value="Platformer">
+                <option value="RPG">
+                <option value="Party">
+                <option value="Action">
+                <option value="Rhythm">
+                <option value="All of them!">
+                <option value="Other">
+                </datalist>
+            </p>
+            </fieldset>
+            <fieldset>
+                <legend><p>How did you find the Club?</p></legend>
+                <p>
+                <input type="radio" name="origin" id="friend" value="friend"> 
+                <label for="friend">From a Friend!</label>
+                </p>
+                <p>
+                <input type="radio" name="origin" id="socials" value="socials"> 
+                <label for="socials">Social Media Posts!</label>
+                </p>
+                <p>
+                <input type="radio" name="origin" id="seen" value="seen"> 
+                <label for="seen">Saw it in Person!</label>
+                </p>
+                <p>
+                <input type="radio" name="origin" id="other" value="other"> 
+                <label for="other">Other</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><p>Do you specialise in any of these?</p></legend>
+                <p>
+                    <input type="checkbox" name="gametype" id="arcade" value="arcade">
+                    <label for="arcade">Arcade Games</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="gametype" id="board" value="board">
+                    <label for="board">Tabletop Games</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="gametype" id="video" value="video">
+                    <label for="video">Video Games (Console/PC)</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="arcade" id="otherGames" value="otherGames">
+                    <label for="otherGames">Other</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                <legend>Why do you want to join the club?</legend>
+                <label for="message">Your Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="60" rows="10" placeholder="Type your (hopefully heartfelt) Message Here!"></textarea>
+                </p>
+            </fieldset>
+            <br>
+            <button type="submit">Submit Answers</button>
+            <button type="reset">Reset Answers</button>
+        </form>
+        </article>
+    </main>
+</body>
+</html>
